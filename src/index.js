@@ -11,5 +11,3 @@ toastImg.src = toast;
 
 const butterImg = document.getElementById('butter');
 butterImg.src = butter;
-
-console.log('hi');

@@ -7,14 +7,16 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <h1>Fancilicious</h1>
-    <div id="content">
-        <section id="about">
+    <section class="top">
+        <h1>Fancilicious</h1>
+        <div id="about">
             <h2>About</h2>
             <p>This is a simple restaurant page where you can see our
                 finest selection of meals that are fantastic
             </p>
-        </section>
+        </div>
+    </section>
+    <div id="content">
         <h2>Entree</h2>
         <div id="container">
             <div class="item">
@@ -30,6 +32,10 @@
                 <img id="butter" alt="toast with butter on plate">
             </div>
         </div>
+    </div>
+
+    <div id="contact">
+        Contact Info is at abc@123.net
     </div>
     <script src="./main.js"></script>
 </body>
