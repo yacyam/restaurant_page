@@ -36,7 +36,8 @@ module.exports = {
     new HtmlWebpackPlugin({
         title: 'Simple Restaurant',
         filename: 'index.html',
-        template: 'src/template.html'
+        template: 'src/template.html',
+        
     })
   ]
 };
