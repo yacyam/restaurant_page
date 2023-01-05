@@ -27,9 +27,17 @@ module.exports = {
             use: ["style-loader", "css-loader"],
         },
         {
-            test: /\.(png|svg|jpeg|jpg|webp|gif)$/i,
-            type: 'asset/resource'
-        }
+          test: /\.(gif|png|jpe?g)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'assets/images/'
+              }
+            }
+          ]
+        },
     ]
   },
   plugins: [
