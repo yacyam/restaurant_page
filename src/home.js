@@ -1,5 +1,6 @@
 import logo from './assets/images/krustykrab.jpeg';
 import clean from './assets/images/clean.jpeg';
+import initializeMenu from './menu';
 
 function generateHome() {
     /*
@@ -17,10 +18,17 @@ function generateHome() {
 
     let button1 = document.createElement('button');
     button1.innerText = 'Home';
+ 
     let button2 = document.createElement('button');
     button2.innerText = 'Menu';
+    button2.addEventListener('click', () => {
+        document.body.innerHTML = `<div id="content"></div>`;
+        initializeMenu();
+    });
+
     let button3 = document.createElement('button');
     button3.innerText = 'Contact';
+
 
     buttonHold.appendChild(button1);
     buttonHold.appendChild(button2);
@@ -62,5 +70,10 @@ function generateBody() {
     document.body.appendChild(main);
 }
 
+function initializeHome() {
+    generateHome();
+    generateBody();
+}
 
-export { generateHome, generateBody };
+
+export default initializeHome

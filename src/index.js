@@ -1,6 +1,8 @@
 import './styles/style.css'
-import { generateHome, generateBody } from './home'
+import initializeHome from './home'
 
 
-generateHome();
-generateBody();
+initializeHome();
+
+
+
