@@ -50,16 +50,20 @@ function generateContent() {
     let img3 = document.createElement('img');
     img3.src = nasty
     img3.classList = 'image'
+    
 
     homeContent1.classList = 'content';
+    homeContent1.id = 'content1'
     homeContent2.classList = 'content';
+    homeContent2.id = 'content2'
     homeContent3.classList = 'content';
+    homeContent3.id = 'content3'
 
-    homeContent1.innerHTML = `<h3>Krabby Patty (Extra Pickles) &nbsp; &nbsp; 
-    &nbsp; &nbsp; &nbsp; 20 Crustaceans</h3>`
-    homeContent2.innerHTML = `<h3>Krabby Dogs &nbsp; &nbsp; 
+    homeContent1.innerHTML = `<h3 class="desc">Krabby Patty &nbsp; &nbsp; &nbsp;
+    20 Crustaceans</h3>`
+    homeContent2.innerHTML = `<h3 class="desc2">Krabby Dogs &nbsp; &nbsp; 
     &nbsp; &nbsp; &nbsp; 50 Crustaceans</h3>`
-    homeContent3.innerHTML = `<h3>Secret Spices Krabby Patty &nbsp; &nbsp; 
+    homeContent3.innerHTML = `<h3 class="desc3">Secret Krabby Patty &nbsp; &nbsp; 
     &nbsp; &nbsp; &nbsp; 200 Crustaceans</h3>`
 
 
@@ -84,7 +88,6 @@ function generateContent() {
         black 20px,
         black 40px
     )`;
-    document.body.style.backgroundColor = 'blue';
 }
 
 function initializeMenu(){
