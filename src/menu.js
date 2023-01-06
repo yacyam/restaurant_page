@@ -1,11 +1,13 @@
 import initializeHome from './home'
+import initializeContact from './contact'
 import patty from './assets/images/patties.jpeg'
 import pretty from './assets/images/pretty.jpeg'
 import nasty from './assets/images/nasty.jpeg'
+
 function generateMenu(){
     let contentDiv = document.getElementById('content');
     let header = document.createElement('h1');
-    header.innerText = 'Menu';
+    header.innerText = 'KRUSTY MENU';
 
     let buttonHold = document.createElement('div');
     buttonHold.classList = 'buttons';
@@ -22,6 +24,11 @@ function generateMenu(){
 
     let button3 = document.createElement('button');
     button3.innerText = 'Contact';
+    button3.addEventListener('click', () => {
+        document.body.innerHTML = `<div id="content"></div>`;
+        initializeContact();
+    });
+    
 
 
     buttonHold.appendChild(button1);

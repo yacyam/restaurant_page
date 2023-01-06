@@ -1,14 +1,9 @@
 import logo from './assets/images/krustykrab.jpeg';
 import clean from './assets/images/clean.jpeg';
 import initializeMenu from './menu';
+import initializeContact from './contact';
 
 function generateHome() {
-    /*
-    let image = document.createElement('img');
-    image.classList = 'image'
-    image.src = "bubbles.jpeg"
-    console.log(image);
-    */
     let contentDiv = document.getElementById('content');
     let header = document.createElement('h1');
     header.innerText = 'KRUSTY KRAB';
@@ -28,6 +23,10 @@ function generateHome() {
 
     let button3 = document.createElement('button');
     button3.innerText = 'Contact';
+    button3.addEventListener('click', () => {
+        document.body.innerHTML = `<div id="content"></div>`;
+        initializeContact();
+    });
 
 
     buttonHold.appendChild(button1);
