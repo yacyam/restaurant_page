@@ -61,7 +61,7 @@ function generateContent() {
 
     homeContent1.innerHTML = `<h3 class="desc">Krabby Patty &nbsp; &nbsp; &nbsp;
     20 Crustaceans</h3>`
-    homeContent2.innerHTML = `<h3 class="desc2">Krabby Dogs &nbsp; &nbsp; 
+    homeContent2.innerHTML = `<h3 class="desc2">Pretty Patties &nbsp; &nbsp; 
     &nbsp; &nbsp; &nbsp; 50 Crustaceans</h3>`
     homeContent3.innerHTML = `<h3 class="desc3">Secret Krabby Patty &nbsp; &nbsp; 
     &nbsp; &nbsp; &nbsp; 200 Crustaceans</h3>`

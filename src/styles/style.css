@@ -26,7 +26,8 @@ body{
 }
 
 #content{
-   background-color: black; 
+   background-image: radial-gradient(rgb(137, 133, 133), rgb(123, 113, 113));
+   margin-bottom:20px;
 }
 
 .buttons{
@@ -40,10 +41,9 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding:20px;
-
 
     animation: 1s ease-out 0s 1 slideInFromLeft;
 }
